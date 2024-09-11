@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    height: 90vh;
+    background-color: white;
+    background-image: url(img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03346E;
+    text-align: center;
+    color: #E2E2B6;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 5%;
+    background-color: black;
+    margin-top: 10%;
+    border-radius: 10px;
+    
+    input#buscador{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5%;
+        border-radius: 10px;
+        background-color: lightgray;
+    }
+}
+
+.container{
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #E2E2B6;
+    border-radius: 10px;
+    background-color: lightblue;
+
+
+    .info_principal{
+        text-align: center;
+        margin: 2% 0%;
+
+        h2{
+            color: #E2E2B6;
+            text-shadow: 1.5px 1.5px 2px black;
+        }
+
+        p#temp{
+            font-size: 2.5rem;
+        }
+
+        p#rango{
+            font-size: 1.25rem;
+        }
+
+        /* Eliminamos el espacio entre los elementos */
+        .primero img, .primero p { 
+            margin: 2%;
+            padding: 0;
+        }
+        
+        .primero{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p#estado{
+            font-size: 1.50rem;
+            font-weight: bold;
+            margin-bottom: 1%;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
